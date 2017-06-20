@@ -24,11 +24,24 @@
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 500;
+            transition: all ease 0.3s;
+            &:hover {
+                color: $rouge;
+                transition: all ease 0.3s;
+            }
         }
     }
-    .menu .active > a {
+    button.menu-icon {
+        background: url("../images/icone-menu.png");
+        background-size: cover;
+        background-repeat: none;
+        &::after {
+            content: none;
+        }
+    }
+    .menu .active > a, .current-menu-item {
         background: none;
-        border-bottom: 1px solid $blanc;
+        border-bottom: 2px solid $blanc;
     }
      .menu ul.dropdown.is-dropdown-submenu {
         border: none;
@@ -36,11 +49,18 @@
         white-space: nowrap;
         right: auto;
         left: 0;
+        padding-bottom: 5px;
 
         a {
-            
-        text-transform: none;
-        font-size: 16px;
+            text-transform: none;
+            font-size: 16px;
+            padding: 15px;
+
         }
+    }
+
+    //petite fleche de submenu
+    .mobile-menu .is-accordion-submenu-parent > a::after, .mobile-off-canvas-menu .is-accordion-submenu-parent > a::after, .desktop-menu li.is-dropdown-submenu-parent > a::after {
+        border-color: $blanc transparent transparent;
     }
 }

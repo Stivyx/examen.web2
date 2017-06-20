@@ -29,8 +29,17 @@ $rouge: #ff0000;
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 2px;
+    transition: all ease 0.3s;
     &:hover {
         background: $vert;
         color: $blanc;
+        transition: all ease 0.3s;
     }
+}
+.anime-logo {
+    transition: all 0.3s ease;
+}
+.anime-logo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }

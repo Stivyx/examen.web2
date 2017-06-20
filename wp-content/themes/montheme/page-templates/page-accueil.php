@@ -26,13 +26,12 @@ get_header(); ?>
 
 <section class="accueil-propos row text-center">
 	<h2>
-		À propos de nous
+		<?php the_field("titre_à_propos"); ?>
 	</h2>
 	<p class="text-left" >
-		Structures intérieurs est une entreprise de conception et de création de meubles et petits mobilier en bois. Nous réalisons également de l’aménagement sur mesure telle que des dressing, des bibliothèques ou des bureaux.
-		Les pièces que nous réalisons sont produites à l’unité ou en très petites quantités. Tous nos produits sont fait main et sur mesure.
+		<?php the_field("texte_à_propos"); ?>
 	</p>
-	<a href="#" class="cta">Contactez nous</a>
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>contact-2/" class="cta">Contactez nous</a>
 </section>
 
 
@@ -42,7 +41,7 @@ get_header(); ?>
 <section class="accueil-fonctionnement">
 	<div class="">
 		<h2 class="text-center" >
-			Notre fonctionnement
+			<?php the_field("titre_fonctionnement"); ?>
 		</h2>
 		<div class="content row">
 			<article class="medium-4 column text-center">
@@ -50,9 +49,9 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/definition-projet.jpg" alt="definition-projet">
 			</div>
 			<div class="descriptif">
-				<h3 class="text-center" >Définition du projet</h3>
+				<h3 class="text-center" ><?php the_field("titre_etape_1_fonctionnement"); ?></h3>
 				<p>
-					Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus.
+					<?php the_field("texte_etape_1_fonctionnement"); ?>
 				</p>
 			</div>
 		</article>
@@ -61,9 +60,9 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/simulation-3d.jpg" alt="definition-projet">
 			</div>
 			<div class="descriptif">
-				<h3 class="text-center" >Simulation 3D</h3>
+				<h3 class="text-center" ><?php the_field("titre_etape_2_fonctionnement"); ?></h3>
 				<p>
-					Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus.
+					<?php the_field("texte_etape_2_fonctionnement"); ?>
 				</p>
 			</div>
 		</article>
@@ -72,9 +71,9 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/livraison-installation.jpg" alt="definition-projet">
 			</div>
 			<div class="descriptif">
-				<h3 class="text-center" >Livraison et installation</h3>
+				<h3 class="text-center" ><?php the_field("titre_etape_3_fonctionnement"); ?></h3>
 				<p>
-					Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus.
+					<?php the_field("texte_etape_3_fonctionnement"); ?>
 				</p>
 			</div>
 		</article>

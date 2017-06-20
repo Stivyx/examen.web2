@@ -18,10 +18,10 @@
 					Copyright © 2017
 				</div>
 				<div class="medium-4 column text-center">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-structures-interieurs.png" alt="logo structures intérieures"></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="anime-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-structures-interieurs.png" alt="logo structures intérieures"></a>
 				</div>
 				<div class="medium-4 column medium-text-right">
-					Suivez nous sur : <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					Suivez nous sur : <a href="https://www.facebook.com/Structures-Int%C3%A9rieures-541193659275924/" target="blank" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
 
 				</div>
 

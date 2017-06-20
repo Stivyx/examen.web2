@@ -14,5 +14,11 @@
     }
     a {
         color: $blanc;
+        transition: all ease 0.3s;
+        padding: 5px;
+        &:hover {
+            transition: all ease 0.3s;
+            color: $vert;
+        }
     }
 }

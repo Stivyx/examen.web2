@@ -39,7 +39,7 @@
 		<nav class="row site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-structures-interieurs.png" alt="logo structures intérieures"></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="anime-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-structures-interieurs.png" alt="logo structures intérieures"></a>
 				</div>
 			</div>
 			<div class="top-bar-right">
