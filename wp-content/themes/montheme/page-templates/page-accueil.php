@@ -11,8 +11,8 @@ get_header(); ?>
 		<div class="row" >
 			<div class="large-6 column colonne-gauche">
 				<h1>
-					Structures Intérieurs <br>
-				<span class="sous-titre" >Conception Création de mobilier bois</span>
+					<?php the_field("titre_principal"); ?> <br>
+				<span class="sous-titre" ><?php the_field("sous_titre_principal"); ?></span>
 				</h1>
 			</div>
 			<div class="large-6 column colonne-droite ">
@@ -92,30 +92,24 @@ get_header(); ?>
 	<h2 class="text-center" >
 		Nos dernières réalisations
 	</h2>
-	<article class="prestation large-3 medium-6 column">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/etageres.jpg" alt="Etagères murales">
-		<h3>Étagères murales</h3>
-		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>etageres-murales/" class="cta">Voir le produit</a>
+	
+
+	<?php
+		$args = array( 'numberposts' => 4, 'order'=> 'ASC', 'category_name' => 'realisations' );
+		$postslist = get_posts( $args );
+		foreach ($postslist as $post) :  setup_postdata($post); 
+	?>
+
+		<article class="prestation large-3 medium-6 column">
+		<?php the_post_thumbnail(); ?>
+		<h3><?php the_title(); ?></h3>
+		<p><?php the_excerpt(); ?></p>
+		<a href="<?php the_permalink(); ?>" class="cta">Voir le produit</a>
 	</article>
-	<article class="prestation large-3 medium-6 column">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/commode-angle.jpg" alt="Etagères murales">
-		<h3>Commode d’angle</h3>
-		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>commode-dangle/" class="cta">Voir le produit</a>
-	</article>
-	<article class="prestation large-3 medium-6 column">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/boite-vinyles.jpg" alt="Etagères murales">
-		<h3>Boite à vinyles</h3>
-		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>boite-a-vinyles/" class="cta">Voir le produit</a>
-	</article>
-	<article class="prestation large-3 medium-6 column">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enceinte-rose.jpg" alt="Etagères murales">
-		<h3>Enceinte rose</h3>
-		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>enceinte-rose/" class="cta">Voir le produit</a>
-	</article>
+
+	<?php endforeach; ?>
+	<?php wp_reset_query(); ?>
+
 </section>
 
 
@@ -123,7 +117,7 @@ get_header(); ?>
 
 <section class="accueil-contact row">
 	<h2 class="text-center" >
-		Contact
+		<?php the_field("titre_contact"); ?>
 	</h2>
 	<div class="medium-6 column">
 		<p class="infos" >Les champs marqués d’un <span class="obligatoire" >*</span> sont obligatoires.</p>

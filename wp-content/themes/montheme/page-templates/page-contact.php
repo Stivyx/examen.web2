@@ -10,7 +10,7 @@ get_header(); ?>
 	
 	<section class="contact row">
 		<h2 class="text-center" >
-			Contact
+			<?php the_field("titre_contact"); ?>
 		</h2>
 		<div class="medium-6 column">
 			<p class="infos" >Les champs marqués d’un <span class="obligatoire" >*</span> sont obligatoires.</p>
