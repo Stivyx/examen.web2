@@ -94,28 +94,28 @@ get_header(); ?>
 		Nos dernières réalisations
 	</h2>
 	<article class="prestation large-3 medium-6 column">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/etagères.jpg" alt="Etagères murales">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/etageres.jpg" alt="Etagères murales">
 		<h3>Étagères murales</h3>
 		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="" class="cta">Voir le produit</a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>etageres-murales/" class="cta">Voir le produit</a>
 	</article>
 	<article class="prestation large-3 medium-6 column">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/commode-angle.jpg" alt="Etagères murales">
 		<h3>Commode d’angle</h3>
 		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="" class="cta">Voir le produit</a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>commode-dangle/" class="cta">Voir le produit</a>
 	</article>
 	<article class="prestation large-3 medium-6 column">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/boite-vinyles.jpg" alt="Etagères murales">
 		<h3>Boite à vinyles</h3>
 		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="" class="cta">Voir le produit</a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>boite-a-vinyles/" class="cta">Voir le produit</a>
 	</article>
 	<article class="prestation large-3 medium-6 column">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/enceinte-rose.jpg" alt="Etagères murales">
 		<h3>Enceinte rose</h3>
 		<p>Praesent rutrum risus a ex venenatis tempus. Praesent rutrum risus a ex venenatis tempus...</p>
-		<a href="" class="cta">Voir le produit</a>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>enceinte-rose/" class="cta">Voir le produit</a>
 	</article>
 </section>
 

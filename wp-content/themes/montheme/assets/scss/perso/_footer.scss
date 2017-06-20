@@ -1,0 +1,18 @@
+.footer-container {
+    background: $noir-doux;
+    color: $blanc;
+
+    .footer {
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+    }
+    .column {
+        @media screen and (max-width: 639px){
+            padding: 15px 20px;
+        }
+    }
+    a {
+        color: $blanc;
+    }
+}

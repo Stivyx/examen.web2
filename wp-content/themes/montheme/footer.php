@@ -12,7 +12,33 @@
 
 		</section>
 		<div class="footer-container" data-sticky-footer>
-			<footer class="footer">
+			<footer class="footer text-center">
+
+				<div class="medium-4 column medium-text-left">
+					Copyright © 2017
+				</div>
+				<div class="medium-4 column text-center">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-structures-interieurs.png" alt="logo structures intérieures"></a>
+				</div>
+				<div class="medium-4 column medium-text-right">
+					Suivez nous sur : <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>

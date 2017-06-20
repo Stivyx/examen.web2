@@ -1,0 +1,12 @@
+.page-single {
+    padding: 100px 0 0;
+    @media screen and (max-width:639px) {
+        padding-top: 50px;
+    }
+    .image {
+        margin-bottom: 40px;
+    }
+    .cta {
+        margin-top: 15px;
+    }
+}
