@@ -36,7 +36,7 @@
 				</span>
 			</div>
 		</div>
-		<nav class="site-navigation top-bar" role="navigation">
+		<nav class="row site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-structures-interieurs.png" alt="logo structures intérieures"></a>

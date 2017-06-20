@@ -82,7 +82,7 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0,
   medium: 640px,
-  large: 1024px,
+  large: 960px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
@@ -113,9 +113,9 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 35),
+    'h3': ('font-size': 25),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
     'h6': ('font-size': 16),
@@ -123,7 +123,7 @@ $header-styles: (
   medium: (
     'h1': ('font-size': 45),
     'h2': ('font-size': 40),
-    'h3': ('font-size': 30),
+    'h3': ('font-size': 25),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
